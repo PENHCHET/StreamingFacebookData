@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kh.com.camface.repositories_nita.PostRepository">
+
+    <insert id="save">
+        INSERT INTO posts(post_id, link, message, name, object_id, created_time, updated_time, status_type, type, page_id, share_count)
+        VALUES (
+            #{postId},
+            #{link},
+            #{message},
+            #{name},
+            #{objectId},
+            #{createdTime},
+            #{updatedTime},
+            #{statusType},
+            #{type},
+            #{pageId},
+            #{shareCount}
+        )
+    </insert>
+
+</mapper>
